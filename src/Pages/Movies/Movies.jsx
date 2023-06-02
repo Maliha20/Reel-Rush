@@ -15,7 +15,7 @@ const Movies = () => {
     return (
         <div>
             <h2 className='text-3xl font-bold text-blue-900 text-center my-10'>Now Airing</h2>
-            <div className="grid grid-col md:grid-cols-3  justify-center gap-4"  data-aos="fade-down">
+            <div className="grid grid-col md:grid-cols-2 lg:grid-cols-3  justify-center md:gap-2 lg:gap-4"  data-aos="fade-down">
             {
               movies.map(movie=> 
               <Movie key={movie._id} movie={movie}></Movie>
