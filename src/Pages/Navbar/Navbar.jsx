@@ -37,7 +37,7 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <Link to="/">Home</Link>
-            <Link to="/login/movie">Movie</Link>
+            <Link to="/login/about">About</Link>
           </ul>
         </div>
         <img className="w-64 h-18" src={logo} alt="" />
@@ -45,7 +45,7 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="text-2xl font-bold text-yellow-500 space-x-8 menu menu-horizontal px-1">
           <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+          <Link to="/login/about">About</Link>
         </ul>
       </div>
       <div className="navbar-end">

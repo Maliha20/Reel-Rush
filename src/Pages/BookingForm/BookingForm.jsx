@@ -24,13 +24,20 @@ const BookingForm = () => {
    })
    .then(res=>res.json())
    .then(data=>{
+    const storedData = localStorage.getItem("bookingData");
+    let allTickets = storedData ? JSON.parse(storedData) : [];
+    if (!Array.isArray(allTickets)) {
+      allTickets = [];
+    }
     const bookingData = {
       name: show.name,
       quantity: data.quantity,
       buyerName: user?.displayName,
       email: user?.email
     };
-    localStorage.setItem("bookingData", JSON.stringify(bookingData));
+    allTickets.push(bookingData);
+
+    localStorage.setItem("bookingData", JSON.stringify(allTickets));
     Swal.fire("Added!", "Your post has been Added.", "success");
     console.log(data)
 

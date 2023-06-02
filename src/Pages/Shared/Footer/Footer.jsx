@@ -8,21 +8,21 @@ const Footer = () => {
     <p>Reel Rush Entertainment Ltd.<br/>Providing blockbusters since 2010</p>
   </div> 
   <div>
-    <span className="footer-title text-orange-700">Services</span> 
+    <span className="footer-title pt-16 text-orange-700">Services</span> 
     <a className="link link-hover">Giveaways</a> 
     <a className="link link-hover">Ratings</a> 
     <a className="link link-hover">Pormotions</a> 
     <a className="link link-hover">Advertisement</a>
   </div> 
   <div>
-    <span className="footer-title  text-orange-700">Reel Rush</span> 
+    <span className="footer-title  pt-16  text-orange-700">Reel Rush</span> 
     <a className="link link-hover">About us</a> 
     <a className="link link-hover">Contact</a> 
     <a className="link link-hover">Movies</a> 
     <a className="link link-hover">Shows</a>
   </div> 
   <div>
-    <span className="footer-title text-orange-700">Legal</span> 
+    <span className="footer-title  pt-16 text-orange-700">Legal</span> 
     <a className="link link-hover">Terms of use</a> 
     <a className="link link-hover">Privacy policy</a> 
     <a className="link link-hover">Cookie policy</a>

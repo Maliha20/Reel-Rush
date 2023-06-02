@@ -9,6 +9,7 @@ import LoginLayout from "../Layout/LoginLayout";
 import Login from "../Pages/Login/Login";
 import BookingForm from "../Pages/BookingForm/BookingForm";
 import Register from "../Pages/Register/Register";
+import About from "../Pages/About/About";
 const router = createBrowserRouter([
     {
       path: "/",
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
           path: 'booking/:id',
           element: <BookingForm></BookingForm>,
           loader:({params})=>fetch(`http://localhost:5000/movie/${params.id}`)
+        },
+        {
+          path: "/login/about",
+          element:<About></About>
         }
       ]
     }
